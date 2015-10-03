@@ -1,0 +1,28 @@
+{
+  "name": "@bockit/simple-router",
+  "version": "1.0.0",
+  "description": "Universal router, takes a uri as input and calls a handler. Define handlers for patterns or regexes.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tape tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bockit/simple-router.git"
+  },
+  "keywords": [
+    "browser",
+    "router",
+    "universal",
+    "isomorphic"
+  ],
+  "author": "James Hiscock <james@jameshiscock.com> (http://jameshiscock.com/)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/bockit/simple-router/issues"
+  },
+  "homepage": "https://github.com/bockit/simple-router#readme"
+}
