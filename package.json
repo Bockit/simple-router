@@ -19,10 +19,22 @@
     "universal",
     "isomorphic"
   ],
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "author": "James Hiscock <james@jameshiscock.com> (http://jameshiscock.com/)",
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/bockit/simple-router/issues"
   },
-  "homepage": "https://github.com/bockit/simple-router#readme"
+  "homepage": "https://github.com/bockit/simple-router#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "tape": "^4.2.1"
+  },
+  "dependencies": {
+    "babelify": "^6.3.0"
+  }
 }

@@ -17,12 +17,9 @@ import SimpleRouter from '@bockit/simple-router'
 var router = new SimpleRouter()
 
 router
-    .get('/hello-world', (req) => {
-        console.log('hello!')
-    })
-    .get('/goodbye-world', (req) => {
-        console.log('goodbye!')
+    .get('/hello/:name', (req) => {
+        console.log('hello ' + req.params.name + '!')
     })
 
-router.process('/hello-world')
+router.process('/hello/James') // 'hello James!'
 ```
