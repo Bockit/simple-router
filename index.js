@@ -2,7 +2,7 @@ import * as qs from 'querystring'
 
 /**
  * A simple router. Instantiate with no argument, and call
- * `router.get(<string>, <function>)` to add route handlers. Attempt to match a
+ * `router.route(<string>, <function>)` to add route handlers. Attempt to match a
  * URI with `router.process(<string>)`, calling the handler of the first matched
  * route and returning true, or finding no matches and returning false.
  */
@@ -13,7 +13,7 @@ export default class SimpleRouter {
     }
 
     /**
-     * Add a GET request handler.
+     * Add a request handler.
      * @param  {String} pattern   The URI pattern. Backbone style pattern,
      *                            supports :named, *splat and (/optional)
      *                            patterns. Can also be a direct regex.
@@ -21,7 +21,7 @@ export default class SimpleRouter {
      *                            matches
      * @return {Router}           The router instance for chaining
      */
-    get (pattern, handler) {
+    route (pattern, handler) {
         if (typeof pattern === 'string') {
             var regex = patternToRegex(pattern)
             var names = getNames(pattern)
