@@ -1,7 +1,7 @@
 Simple Router
 =============
 
-Define your routes as string or regex patterns that map to functions to call. Not middleware for an express app, 
+Define your routes as string or regex patterns that map to functions to call.
 
 Installation
 ------------
