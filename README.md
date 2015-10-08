@@ -54,7 +54,7 @@ For example, `/foo/:bar` matching `/foo/quux?beep=boop` becomes:
 ```javascript
 {
     uri: '/foo/quux?beep=boop',
-    regex: //,
+    regex: /^/foo/([^/?]+)(?:\?([\s\S]*))?$/,
     pattern: '/foo/:bar',
     matched: [ 'quux' ],
     query: {
