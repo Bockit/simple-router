@@ -1,7 +1,9 @@
 Simple Router
 =============
 
-Define your routes as string or regex patterns that map to functions to call.
+Define your routes as string or regex patterns that map to functions to call. Intended to be used in universal javascript applications. 
+
+One way it could be used is to turn uris into actions to dispatch to stores in a flux architecture.
 
 Installation
 ------------
