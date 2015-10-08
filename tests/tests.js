@@ -64,7 +64,7 @@ test('Create routes', function (t) {
     let router = new Router
     let noop = function () {}
 
-    router.get('/hello', noop)
+    router.route('/hello', noop)
     t.equals(router.routes.length, 1, 'Routes are added to the router')
     t.ok(router.routes[0] != null && typeof router.routes[0] === 'object', 'Route objects are created')
     t.end()
@@ -73,7 +73,7 @@ test('Create routes', function (t) {
 test('Calls handlers', function (t) {
     t.plan(1)
     let router = new Router
-    router.get('/hello', function () {
+    router.route('/hello', function () {
         t.pass('Handler is called')
     })
     router.process('/hello')
