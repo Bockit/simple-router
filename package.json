@@ -1,6 +1,6 @@
 {
   "name": "@bockit/simple-router",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Universal router, takes a uri as input and calls a handler. Define handlers for patterns or regexes.",
   "main": "index.js",
   "directories": {
