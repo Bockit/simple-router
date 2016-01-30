@@ -31,10 +31,10 @@
   },
   "homepage": "https://github.com/bockit/simple-router#readme",
   "devDependencies": {
-    "babel": "^5.8.23",
+    "babel-register": "^6.4.3",
     "tape": "^4.2.1"
   },
   "dependencies": {
-    "babelify": "^6.3.0"
+    "babelify": "^7.2.0"
   }
 }
